@@ -14,13 +14,13 @@ public class NumberGuessingGame extends JFrame {
     private JButton guessButton;
 
     public NumberGuessingGame() {
-        // Setup the JFrame
+        
         setTitle("Number Guessing Game");
         setSize(400, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
 
-        // Initialize components
+        
         JLabel promptLabel = new JLabel("Enter your guess (1-100):");
         promptLabel.setBounds(50, 20, 200, 30);
         add(promptLabel);
@@ -41,7 +41,7 @@ public class NumberGuessingGame extends JFrame {
         guessButton.setBounds(150, 140, 100, 30);
         add(guessButton);
 
-        // Initialize game logic
+        
         targetNumber = new Random().nextInt(100) + 1;
         attemptsLeft = MAX_ATTEMPTS;
 
